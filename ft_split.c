@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 21:41:14 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/04 18:26:41 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:56:14 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static char	**free_word_memory(char **words, int j)
 
 static int	get_len(char const *s, char c, int i)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	while (s[i] != c && s[i] != '\0')
@@ -49,7 +49,8 @@ static char	**split_words(char const *s, char **words, char c, int words_num)
 		k = 0;
 		while (s[i] == c)
 			i++;
-		if (!(words[j] = (char *)malloc(sizeof(char) * get_len(s, c, i) + 1)))
+		words[j] = malloc(sizeof(char) * get_len(s, c, i) + 1);
+		if (words[j] == NULL)
 			return (free_word_memory(words, j));
 		while (s[i] != '\0' && s[i] != c)
 			words[j][k++] = s[i++];
@@ -66,11 +67,11 @@ static int	get_num_of_words(char const *s, char c)
 	int		count;
 	int		flag;
 
+	if (s[0] == '\0')
+		return (0);
 	i = 0;
 	count = 0;
 	flag = 0;
-	if (s[i] == '\0')
-		return (0);
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
@@ -85,7 +86,7 @@ static int	get_num_of_words(char const *s, char c)
 	return (count);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**words;
 	int		words_num;
@@ -93,7 +94,8 @@ char		**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	words_num = get_num_of_words(s, c);
-	if (!(words = (char **)malloc(sizeof(char *) * (words_num + 1))))
+	words = malloc(sizeof(char *) * (words_num + 1));
+	if (words == NULL)
 		return (NULL);
 	return (split_words(s, words, c, words_num));
 }

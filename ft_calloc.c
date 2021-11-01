@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/28 08:13:37 by ysaito            #+#    #+#             */
-/*   Updated: 2021/10/23 00:35:35 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:39:41 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *ptr;
+	void	*ptr;
 
 	ptr = (void *)malloc(count * size);
 	if (ptr == NULL)

@@ -6,17 +6,17 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 13:57:16 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/05 00:30:49 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:49:58 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	ch;
 
-	ch = c;
+	ch = (char)c;
 	while (*s != '\0')
 	{
 		if (*s == ch)

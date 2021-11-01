@@ -6,13 +6,13 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/24 16:56:59 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/06 10:39:22 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:50:31 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	slen;
 

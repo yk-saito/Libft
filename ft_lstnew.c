@@ -6,13 +6,13 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 18:29:39 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/07 11:37:58 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:45:19 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list		*ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
 

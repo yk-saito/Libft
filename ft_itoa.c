@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 13:05:39 by ysaito            #+#    #+#             */
-/*   Updated: 2021/10/23 00:37:37 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:41:59 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	get_num_len(long n)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	if (n <= 0)
@@ -30,7 +30,7 @@ static int	get_num_len(long n)
 	return (len);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*str;
 	long	num;
@@ -38,7 +38,8 @@ char		*ft_itoa(int n)
 
 	num = n;
 	num_len = get_num_len(num);
-	if (!(str = malloc(sizeof(char) * (num_len + 1))))
+	str = malloc(sizeof(char) * (num_len + 1));
+	if (str == NULL)
 		return (NULL);
 	str[num_len--] = '\0';
 	if (n == -2147483648)

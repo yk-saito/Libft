@@ -6,13 +6,13 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/06 23:53:54 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/07 11:37:50 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:43:27 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*copylst;
 	t_list	*newlst;

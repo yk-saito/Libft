@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 00:23:02 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/07 12:07:12 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:58:07 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ static size_t	judge_trim(char c, char const *set)
 	return (0);
 }
 
-char			*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int			start;
-	int			end;
+	int	start;
+	int	end;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);

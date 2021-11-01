@@ -6,13 +6,13 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 10:19:28 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/05 23:49:57 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:37:51 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long	num;
 	int		negative;

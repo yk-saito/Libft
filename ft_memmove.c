@@ -6,13 +6,13 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 14:19:37 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/05 07:18:12 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:47:48 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*dp;
 	char	*sp;
@@ -22,9 +22,7 @@ void		*ft_memmove(void *dst, const void *src, size_t len)
 	if (len == 0 || dp == sp)
 		return (dst);
 	else if (dp < sp)
-	{
 		return (ft_memcpy(dst, src, len));
-	}
 	else
 	{
 		dp += len - 1;

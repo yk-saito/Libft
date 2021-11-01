@@ -6,16 +6,16 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 08:30:29 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/04 23:16:50 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:55:00 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned char *us1;
-	unsigned char *us2;
+	unsigned char	*us1;
+	unsigned char	*us2;
 
 	us1 = (unsigned char *)s1;
 	us2 = (unsigned char *)s2;

@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 20:27:20 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/01 19:33:17 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:48:35 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!(s))
-	{
+	if (s == NULL)
 		return ;
-	}
 	write(fd, s, ft_strlen(s));
 }

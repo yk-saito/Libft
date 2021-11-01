@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/06 14:54:45 by ysaito            #+#    #+#             */
-/*   Updated: 2021/10/23 00:39:00 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:43:06 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *stored_next;
+	t_list	*stored_next;
 
 	if (lst == NULL || del == NULL)
 		return ;

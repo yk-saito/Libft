@@ -6,13 +6,13 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/06 08:34:09 by ysaito            #+#    #+#             */
-/*   Updated: 2020/07/07 11:38:06 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:45:29 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	numlist;
 

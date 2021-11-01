@@ -6,7 +6,7 @@
 /*   By: ysaito <ysaito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/06 18:28:22 by ysaito            #+#    #+#             */
-/*   Updated: 2021/10/23 00:25:50 by ysaito           ###   ########.fr       */
+/*   Updated: 2021/11/01 20:43:15 by ysaito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *stored_next;
+	t_list	*stored_next;
 
 	while (lst != NULL)
 	{
